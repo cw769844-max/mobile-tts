@@ -2,6 +2,7 @@ import { XMLParser } from 'fast-xml-parser';
 import { decompressSync } from 'fflate';
 import { ArmyList, Datasheet, WeaponProfile } from '../types/army';
 import { UnitStats, DEFAULT_STATS } from '../types/game';
+import { lookupStats } from './lookup-stats';
 
 const parser = new XMLParser({
   ignoreAttributes: false,
@@ -88,7 +89,9 @@ function parseSelection(selection: any): Datasheet | null {
     return typeName.toLowerCase().includes('unit') || typeName.toLowerCase().includes('model stat');
   });
 
-  const stats: UnitStats = statProfile ? parseStatline(statProfile) : { ...DEFAULT_STATS };
+  const parsedStats = statProfile ? parseStatline(statProfile) : null;
+  const hasRealStats = parsedStats && (parsedStats.T > 0 || parsedStats.W > 0);
+  const stats: UnitStats = hasRealStats ? parsedStats! : (lookupStats(name) ?? { ...DEFAULT_STATS });
 
   // Collect weapon profiles
   const weapons: WeaponProfile[] = allProfiles

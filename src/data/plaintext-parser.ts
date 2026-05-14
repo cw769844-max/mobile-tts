@@ -1,5 +1,6 @@
 import { ArmyList, Datasheet } from '../types/army';
 import { DEFAULT_STATS } from '../types/game';
+import { lookupStatsOrDefault } from './lookup-stats';
 
 // Handles the most common plain text formats:
 //  - Official GW app export
@@ -35,7 +36,7 @@ function makeUnit(name: string, pts: number, index: number): Datasheet {
   return {
     id: `txt-${index}-${name.replace(/\s+/g, '-').toLowerCase().slice(0, 20)}`,
     name,
-    stats: { ...DEFAULT_STATS },
+    stats: lookupStatsOrDefault(name),
     weapons: [],
     abilities: [],
     keywords: [],
