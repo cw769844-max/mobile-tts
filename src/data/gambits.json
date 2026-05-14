@@ -1,0 +1,38 @@
+[
+  {
+    "id": "desperate-gambit-breakthrough",
+    "name": "Breakthrough",
+    "maxVp": 15,
+    "description": "Score 5 VP at the end of each of your turns if you have one or more units wholly within your opponent's deployment zone."
+  },
+  {
+    "id": "desperate-gambit-domination",
+    "name": "Domination",
+    "maxVp": 15,
+    "description": "Score 5 VP at the end of each of your turns if you control more objective markers than your opponent and control at least half of all objective markers on the battlefield."
+  },
+  {
+    "id": "desperate-gambit-annihilation",
+    "name": "Annihilation",
+    "maxVp": 15,
+    "description": "Score 5 VP at the end of each of your turns if more enemy units than friendly units were destroyed this turn."
+  },
+  {
+    "id": "desperate-gambit-hold-the-line",
+    "name": "Hold the Line",
+    "maxVp": 15,
+    "description": "Score 5 VP at the end of each of your turns if you control your own deployment zone (all objective markers in your deployment zone are controlled by you, and no enemy units are within your deployment zone)."
+  },
+  {
+    "id": "desperate-gambit-headhunter",
+    "name": "Headhunter",
+    "maxVp": 15,
+    "description": "Score 5 VP at the end of each of your turns if one or more enemy Character units were destroyed this turn."
+  },
+  {
+    "id": "desperate-gambit-overwhelm",
+    "name": "Overwhelm",
+    "maxVp": 15,
+    "description": "Score 5 VP at the end of each of your turns if three or more enemy units were destroyed this turn by attacks made by units from your army."
+  }
+]

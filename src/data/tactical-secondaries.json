@@ -1,0 +1,130 @@
+[
+  {
+    "id": "capture-enemy-outpost",
+    "name": "Capture Enemy Outpost",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "control",
+    "description": "Score 2 VP if you control one or more objective markers that were in your opponent's deployment zone at the start of the battle. Score 4 VP instead if you control two or more such objective markers."
+  },
+  {
+    "id": "engage-on-all-fronts",
+    "name": "Engage on All Fronts",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "control",
+    "description": "Score 2 VP if you have one or more units fully within 3 or more different table quarters, and no table quarter contains any enemy units. Score 4 VP if you have one or more units fully within all 4 table quarters, and no table quarter contains any enemy units."
+  },
+  {
+    "id": "establish-locus",
+    "name": "Establish Locus",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "control",
+    "description": "Score 2 VP if you control the objective marker closest to the centre of the battlefield. Score 4 VP instead if you control the objective marker closest to the centre of the battlefield and at least one other objective marker."
+  },
+  {
+    "id": "extend-battle-lines",
+    "name": "Extend Battle Lines",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "control",
+    "description": "Score 2 VP if you have one or more units in your opponent's deployment zone. Score 4 VP instead if you have two or more units in your opponent's deployment zone."
+  },
+  {
+    "id": "behind-enemy-lines",
+    "name": "Behind Enemy Lines",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "control",
+    "description": "Score 2 VP if you have one or more units wholly within your opponent's deployment zone. Score 4 VP if you have two or more units wholly within your opponent's deployment zone."
+  },
+  {
+    "id": "secure-no-mans-land",
+    "name": "Secure No Man's Land",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "control",
+    "description": "Score 2 VP if you control one or more objective markers that are not in either player's deployment zone. Score 4 VP if you control two or more objective markers that are not in either player's deployment zone."
+  },
+  {
+    "id": "area-denial",
+    "name": "Area Denial",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "control",
+    "description": "Score 2 VP if there are no enemy units within your deployment zone (excluding your opponent's units that were set up in your deployment zone as part of that unit's Reserve rules). Score 4 VP if there are no enemy units within 6\" of your deployment zone boundary (same exception applies)."
+  },
+  {
+    "id": "cull-the-horde",
+    "name": "Cull the Horde",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "attrition",
+    "description": "Score 2 VP if 6 or more enemy models were destroyed this turn. Score 4 VP if 10 or more enemy models were destroyed this turn."
+  },
+  {
+    "id": "assassinate",
+    "name": "Assassinate",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "purge",
+    "description": "Score 2 VP if one or more enemy Character models were destroyed this turn. Score 4 VP if two or more enemy Character models were destroyed this turn."
+  },
+  {
+    "id": "bring-it-down",
+    "name": "Bring It Down",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "purge",
+    "description": "Score 2 VP if one or more enemy Monster or Vehicle models were destroyed this turn. Score 4 VP if two or more enemy Monster or Vehicle models were destroyed this turn."
+  },
+  {
+    "id": "recover-assets",
+    "name": "Recover Assets",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "mission",
+    "description": "Score 2 VP if you control one or more objective markers. Score 4 VP if you control two or more objective markers."
+  },
+  {
+    "id": "deploy-teleport-homer",
+    "name": "Deploy Teleport Homer",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "mission",
+    "description": "Score 2 VP if one or more units from your army that have the Infiltrators or Scout special rule are within 6\" of the centre of the battlefield. Score 4 VP if two or more such units are within 6\" of the centre."
+  },
+  {
+    "id": "cleanse",
+    "name": "Cleanse",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "mission",
+    "description": "Score 2 VP if one or more units from your army that are in your opponent's deployment zone control one or more objective markers. Score 4 VP if two or more units from your army in your opponent's deployment zone each control an objective marker."
+  },
+  {
+    "id": "no-prisoners",
+    "name": "No Prisoners",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "attrition",
+    "description": "Score 2 VP if any enemy units were destroyed this turn. Score 4 VP if three or more enemy units were destroyed this turn."
+  },
+  {
+    "id": "overwhelming-force",
+    "name": "Overwhelming Force",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "attrition",
+    "description": "Score 2 VP if all models in an enemy unit were destroyed by attacks made by models from a single unit from your army this turn. Score 4 VP if all models in two or more enemy units were each destroyed by attacks made by models from a single unit from your army this turn."
+  },
+  {
+    "id": "take-and-hold",
+    "name": "Take and Hold",
+    "maxVp": 4,
+    "scoringRounds": "each",
+    "category": "control",
+    "description": "Score 2 VP if you control more objective markers than your opponent at the end of your turn. Score 4 VP instead if you control 3 or more objective markers and more than your opponent."
+  }
+]

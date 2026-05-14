@@ -1,0 +1,56 @@
+[
+  {
+    "id": "command-reroll",
+    "name": "Command Re-roll",
+    "cost": 1,
+    "phase": "any",
+    "timing": "Before making a dice roll for a unit or model",
+    "effect": "Re-roll that dice roll. Each dice roll can only be re-rolled once per phase.",
+    "isCustom": false
+  },
+  {
+    "id": "counter-offensive",
+    "name": "Counter-offensive",
+    "cost": 2,
+    "phase": "fight",
+    "timing": "After an enemy unit has fought in the Fight phase, select one of your own eligible units to fight next",
+    "effect": "That unit fights next.",
+    "isCustom": false
+  },
+  {
+    "id": "grenadiers",
+    "name": "Grenadiers",
+    "cost": 1,
+    "phase": "shooting",
+    "timing": "When a unit from your army is selected to shoot, before any attacks are resolved",
+    "effect": "Until the end of the phase, each time a model in that unit makes an attack with a Grenade weapon, an unmodified hit roll of 6 scores 1 additional hit.",
+    "isCustom": false
+  },
+  {
+    "id": "heroic-intervention",
+    "name": "Heroic Intervention",
+    "cost": 1,
+    "phase": "charge",
+    "timing": "After an enemy unit ends a Charge move",
+    "effect": "Select one unit from your army that is within 6\" of that enemy unit and is not within Engagement Range of any other enemy unit. Your unit can make a Normal move of up to 3\", but must end that move in Engagement Range of the enemy unit.",
+    "isCustom": false
+  },
+  {
+    "id": "rapid-ingress",
+    "name": "Rapid Ingress",
+    "cost": 1,
+    "phase": "movement",
+    "timing": "At the end of your opponent's Movement phase",
+    "effect": "Select one unit from your army that is in Reserves, and set it up on the battlefield as described by the Reserve rule for that unit. That unit cannot make a Normal move, Advance, Fall Back, or Charge during the current turn.",
+    "isCustom": false
+  },
+  {
+    "id": "smokescreen",
+    "name": "Smokescreen",
+    "cost": 1,
+    "phase": "shooting",
+    "timing": "When an enemy unit targets one of your units with ranged attacks",
+    "effect": "Until the end of the phase, all models in your unit have the Benefit of Cover.",
+    "isCustom": false
+  }
+]
