@@ -30,18 +30,19 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      # Firebase config is read from .env by app.config.ts at prebuild time.
-      # Add each variable as a GitHub Actions secret in your repo settings.
+      # Firebase config: use real secrets if set, otherwise placeholders.
+      # Placeholders let the APK build and run — multiplayer won't connect,
+      # but all offline features (dice, army import, stats, etc.) work fine.
       - name: Write .env
         run: |
           cat > .env <<'ENVEOF'
-          FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY }}
-          FIREBASE_AUTH_DOMAIN=${{ secrets.FIREBASE_AUTH_DOMAIN }}
-          FIREBASE_DATABASE_URL=${{ secrets.FIREBASE_DATABASE_URL }}
-          FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID }}
-          FIREBASE_STORAGE_BUCKET=${{ secrets.FIREBASE_STORAGE_BUCKET }}
-          FIREBASE_MESSAGING_SENDER_ID=${{ secrets.FIREBASE_MESSAGING_SENDER_ID }}
-          FIREBASE_APP_ID=${{ secrets.FIREBASE_APP_ID }}
+          FIREBASE_API_KEY=${{ secrets.FIREBASE_API_KEY || 'placeholder-api-key' }}
+          FIREBASE_AUTH_DOMAIN=${{ secrets.FIREBASE_AUTH_DOMAIN || 'placeholder.firebaseapp.com' }}
+          FIREBASE_DATABASE_URL=${{ secrets.FIREBASE_DATABASE_URL || 'https://placeholder-default-rtdb.firebaseio.com' }}
+          FIREBASE_PROJECT_ID=${{ secrets.FIREBASE_PROJECT_ID || 'placeholder-project' }}
+          FIREBASE_STORAGE_BUCKET=${{ secrets.FIREBASE_STORAGE_BUCKET || 'placeholder.appspot.com' }}
+          FIREBASE_MESSAGING_SENDER_ID=${{ secrets.FIREBASE_MESSAGING_SENDER_ID || '000000000000' }}
+          FIREBASE_APP_ID=${{ secrets.FIREBASE_APP_ID || '1:000000000000:web:placeholder' }}
           ENVEOF
 
       - name: Generate native Android project
