@@ -28,7 +28,7 @@ jobs:
           java-version: 17
 
       - name: Install dependencies
-        run: npm ci
+        run: npm install
 
       # Firebase config: use real secrets if set, otherwise placeholders.
       # Placeholders let the APK build and run — multiplayer won't connect,
