@@ -15,7 +15,6 @@
     },
     "plugins": [
       "expo-router",
-      "react-native-gesture-handler",
       [
         "expo-image-picker",
         { "photosPermission": "Allow importing battle maps and token images" }
